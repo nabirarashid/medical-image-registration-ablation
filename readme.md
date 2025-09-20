@@ -106,6 +106,7 @@ Our enhanced regularization framework includes:
 ```
 medical-image-registration-ablation/
 ├── original_model/                     # Baseline UNet Model
+│   ├── original_model_training.ipynb # Training notebook
 │   ├── train.py                       # Training script
 │   ├── model.py                       # UNet + STN architecture
 │   ├── losses.py                      # Basic loss functions (Dice + Cross-entropy)
@@ -113,6 +114,8 @@ medical-image-registration-ablation/
 │   ├── convert_one_hot.py             # One-hot encoding utilities
 │   └── seg4_paths_copy.txt           # Dataset file paths
 ├── baseline_and_regloss/              # RegLoss UNet Model
+│   ├── baseline_and_regloss_training.ipynb # Training notebook
+│   ├── registration_workflow.ipynb   # Additional workflow notebook
 │   ├── train.py                       # Training script
 │   ├── model.py                       # UNet + STN architecture
 │   ├── losses.py                      # Enhanced regularization losses
@@ -120,6 +123,7 @@ medical-image-registration-ablation/
 │   ├── convert_one_hot.py             # One-hot encoding utilities
 │   └── seg4_paths_copy.txt           # Dataset file paths
 ├── baseline_and_affine/               # Combined (Basic Loss) Model
+│   ├── baseline_and_affine_training.ipynb # Training notebook
 │   ├── train.py                       # Training script
 │   ├── model.py                       # Affine + Deformable architecture
 │   ├── losses.py                      # Basic loss functions
@@ -127,6 +131,7 @@ medical-image-registration-ablation/
 │   ├── convert_one_hot.py             # One-hot encoding utilities
 │   └── seg4_paths.txt                # Dataset file paths
 ├── fully_enhanced/                    # Combined (Enhanced) Model
+│   ├── fully_enhanced_model_training.ipynb # Training notebook
 │   ├── train.py                       # Training script
 │   ├── model.py                       # Full Affine + Deformable architecture
 │   ├── losses.py                      # Complete regularization framework
